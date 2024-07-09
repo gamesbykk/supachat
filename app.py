@@ -16,4 +16,4 @@ if prompt:
       ),
   ).json()
   with st.chat_message('Assistant'):
-    st.write(out)
+    st.write(out['data']['message'])
