@@ -7,7 +7,7 @@ if prompt:
   with st.chat_message('User'):
     st.write(prompt)
   out=requests.post(
-      "https://ishwarikatariya.app.modelbit.com/v1/chat/latest",
+      "https://ishwarikatariya.app.modelbit.com/v1/chat/6",
       headers={"Content-Type": "application/json"},
       data=json.dumps(
           {
