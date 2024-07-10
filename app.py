@@ -15,9 +15,6 @@ if prompt:
           }
       ),
   ).json()
-  rawtext=out['data']['message']
-  sep = "text': '"
-  stripped = rawtext.split(sep, 1)[1]
-  stripped=stripped[:-3]
+  text=out['data']['message']
   with st.chat_message('Assistant'):
-    st.write(stripped)
+    st.write(text)
