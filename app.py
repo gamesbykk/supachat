@@ -15,6 +15,6 @@ if prompt:
           }
       ),
   ).json()
-  text=out['data']['message']
+  text=out['data']['message'][0]
   with st.chat_message('Assistant'):
     st.write(text)
