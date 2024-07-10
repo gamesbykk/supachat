@@ -11,7 +11,7 @@ if prompt:
       headers={"Content-Type": "application/json"},
       data=json.dumps(
           {
-              "data":f"System: You are a helpful AI mathematician. Always explain your answer step-by-step so the user can understand. Do not create a conversation, only answer the user. \n\n User: {prompt} \n\n Assistant:"
+              "data":f"System: You are a helpful AI mathematician. Always explain your answer step-by-step so the user can understand. \n\n User: {prompt} \n\n Assistant:"
           }
       ),
   ).json()
