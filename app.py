@@ -17,6 +17,6 @@ if prompt:
   ).json()
   text=out['data']['message']
   text=eval(text)[0]
-  text=text['generated_text'].split('\n')[0]
+  text=text['generated_text'].split('User:')[0]
   with st.chat_message('Assistant'):
     st.write(text)
